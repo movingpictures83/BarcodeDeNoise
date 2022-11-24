@@ -1,0 +1,2 @@
+kraken	full1.kraken.report.txt
+sckmer	full1.sckmer.txt

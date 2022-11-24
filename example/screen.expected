@@ -1,0 +1,40 @@
+***********************************************************************************
+*                                                                                 *
+*  PPPPPPPPPPPP    L               U           U   M           M         A        *
+*  P           P   L               U           U   MM         MM        A A       *
+*  P           P   L               U           U   M M       M M       A   A      *
+*  P           P   L               U           U   M  M     M  M      A     A     *
+*  P           P   L               U           U   M   M   M   M     A       A    *
+*  PPPPPPPPPPPP    L               U           U   M    M M    M    A         A   *
+*  P               L               U           U   M     M     M   AAAAAAAAAAAAA  *
+*  P               L               U           U   M           M   A           A  *
+*  P               L               U           U   M           M   A           A  *
+*  P               LLLLLLLLLLLLL    UUUUUUUUUUU    M           M   A           A  *
+*                                                                                 *
+*            [Plu]gin-based [M]icrobiome [A]nalysis (formerly MiAMi)              *
+* (C) 2016, 2018 Bioinformatics Research Group, Florida International University  *
+*    Under MIT License From Open Source Initiative (OSI), All Rights Reserved.    *
+*                                                                                 *
+*    Any professionally published work using PluMA should cite the following:     *
+*                        T. Cickovski and G. Narasimhan.                          *
+*                Constructing Lightweight and Flexible Pipelines                  *
+*                 Using Plugin-Based Microbiome Analysis (PluMA)                  *
+*                     Bioinformatics 34(17):2881-2888, 2018                       *
+*                                                                                 *
+***********************************************************************************
+[PluMA] Running Plugin: BarcodeDeNoise
+# A tibble: 4,590 × 4
+# Groups:   taxid [4,590]
+   taxid     r         p name
+   <int> <dbl>     <dbl> <chr>
+ 1     9 0.774 9.27e- 46 Buchnera aphidicola
+ 2    22 0.879 3.48e-137 Shewanella
+ 3    24 1     0         Shewanella putrefaciens
+ 4    32 0.828 6.15e- 83 Myxococcus
+ 5    34 0.910 2.97e- 39 Myxococcus xanthus
+ 6    35 0.947 2.08e- 63 Corallococcus macrosporus
+ 7    43 0.834 2.55e- 45 Cystobacter fuscus
+ 8    47 0.859 2.53e-102 Archangium
+ 9    48 0.855 3.83e- 31 Archangium gephyra
+10    52 0.814 2.47e- 49 Chondromyces crocatus
+# … with 4,580 more rows
