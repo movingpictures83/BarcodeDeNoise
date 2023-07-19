@@ -1,2 +1,2 @@
 Prefix plugins/BarcodeDeNoise/example/
-Plugin BarcodeDeNoise inputfile parameters.barcodedenoise.txt outputfile none
+Plugin BarcodeDeNoise inputfile parameters.barcodedenoise.txt outputfile ./
