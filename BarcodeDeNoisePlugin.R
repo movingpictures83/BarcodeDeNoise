@@ -21,7 +21,9 @@ output <- function(outfile) {
 # kraken report
 report = read.delim(kraken, header = F)
 report$V8 = trimws(report$V8)
+
 report[report$V8 %in% c('Homo sapiens', 'Bacteria', 'Fungi', 'Viruses'), ]
+print(report)
 
 # sckmer data
 kmer_data = read.table(sckmer, header = T)
@@ -29,6 +31,7 @@ head(kmer_data)
 
 length(unique(report$V8[report$V6 %in% c('G', 'S')]))
 
+print(kmer_data)
 c = kmer_data %>%
   subset(kmer > 1) %>%
   group_by(taxid) %>%
@@ -41,6 +44,6 @@ c = kmer_data %>%
   mutate(p = p.adjust(p))
 
 c$name = report$V8[match(c$taxid, report$V7)] # add taxa names
-print(c)
 
+saveRDS(c, paste(outfile, "c.rds", sep="/"))
 }
